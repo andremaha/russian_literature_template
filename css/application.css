@@ -226,13 +226,14 @@ h4 {
     font-size: 118%;
 }
 
-nav {
+nav, footer {
     font-family: PlayRegular;
 }
 
 p {
     margin: 24px 0;
 }
+
 
 /**********************
 HEADER
@@ -319,6 +320,18 @@ LAST ADDITIONS, SECTIONS
 }
 
 /*********************
+FOOTER
+*********************/
+footer#main-footer {
+    margin-top: 2.34375%;
+    padding:  2.34375%;
+}
+
+footer#main-footer p {
+    text-align: right;
+}
+
+/*********************
 COOL EFFECTS
 *********************/
 #feature {
@@ -333,3 +346,8 @@ COOL EFFECTS
     box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
 }
 
+footer#main-footer {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
