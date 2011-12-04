@@ -314,10 +314,9 @@ LAST ADDITIONS, SECTIONS
     margin-right: -4.6875%;
 }
 
-/**********************
-LAST ADDITIONS, SECTIONS
-**********************/
-
+#last-additions article h4 {
+    text-align: right;
+}
 
 /*********************
 COOL EFFECTS
