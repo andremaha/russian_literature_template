@@ -164,16 +164,11 @@ body {
     background-color: white;
     color: #222;
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
 }
 
 img {
     max-width: 100%; /* Images will be resized to the width of their containers */
-}
-
-p {
-    line-height: 1.2em;
-    margin: 4.2105263157895% 0;
 }
 
 a {
@@ -185,8 +180,7 @@ a:hover {
 }
 
 #wrapper {
-    margin: 0 2.34375%;  /* 24px gutter / 1024px whole width */
-    width: 100%;
+    margin: 0 7.03125%;  /* 24px gutter / 1024px whole width */
 }
 
 /*********************
@@ -195,9 +189,16 @@ TYPOGRAPHY
 body {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 11px/1.5em; /* Using Marc Boulton calculations for harmonic typography */
+    line-height: 2em;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
+    font-family: JuraDemiBold;
+    margin: 2.34375% 0;
+    padding-bottom: 2.34375%;
+}
+
+h1, h4 {
     font-family: JuraLight;
 }
 
@@ -229,6 +230,10 @@ nav {
     font-family: PlayRegular;
 }
 
+p {
+    margin: 24px 0;
+}
+
 /**********************
 HEADER
 **********************/
@@ -239,7 +244,7 @@ HEADER
 }
 
 #site-name {
-    width: 41%;
+    width: 100%;
     position: absolute;
     top: 30%;
     left: 0;
@@ -248,6 +253,7 @@ HEADER
     display: block;
     text-align: right;
     margin:  2%;
+    width: 42.58%;
 }
 
 #main-nav {
@@ -271,3 +277,60 @@ HEADER
 #main-nav ul li a:hover, #main-nav ul li a.active {
     background: url('../img/nav-active.png') top center no-repeat;
 }
+
+/**********************
+FEATURE
+**********************/
+#feature {
+    padding:  2.34375%;
+}
+
+#feature article {
+    margin-left: 30.46875%;
+    padding-left: 2.34375%;
+}
+
+/**********************
+LAST ADDITIONS, SECTIONS
+**********************/
+#last-additions h2, #sections h2 {
+    text-align: center;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+#last-additions article, #sections article {
+    width: 30.46875%;
+    padding: 2.34375%;
+    float: left;
+}
+
+#sections article:nth-child(2),
+#last-additions article:nth-child(2) {
+    margin-left: -2.34375%;
+}
+
+#last-additions article:last-child,
+#sections article:last-child {
+    margin-right: -4.6875%;
+}
+
+/**********************
+LAST ADDITIONS, SECTIONS
+**********************/
+
+
+/*********************
+COOL EFFECTS
+*********************/
+#feature {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+#last-additions article:hover, #sections article:hover {
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 12px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
