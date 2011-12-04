@@ -150,3 +150,124 @@ FONTS
     font-style: normal;
 
 }
+
+/**********************
+BASE
+**********************/
+html {
+    height: 100%;
+}
+
+body {
+    background: url('../img/bg.png');
+    height: 100%;
+    background-color: white;
+    color: #222;
+    margin: 0 auto;
+    width: 95%;
+}
+
+img {
+    max-width: 100%; /* Images will be resized to the width of their containers */
+}
+
+p {
+    line-height: 1.2em;
+    margin: 4.2105263157895% 0;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    margin: 0 2.34375%;  /* 24px gutter / 1024px whole width */
+    width: 100%;
+}
+
+/*********************
+TYPOGRAPHY
+**********************/
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 11px/1.5em; /* Using Marc Boulton calculations for harmonic typography */
+}
+
+h1, h2, h3, h4 {
+    font-family: JuraLight;
+}
+
+h1#site-name {
+    font-size: 327%;
+}
+
+h1#site-name strong {
+    font-size: 40%;
+}
+
+h1 {
+    font-size: 218%;
+}
+
+h2 {
+    font-size: 164%;
+}
+
+h3 {
+    font-size: 145%;
+}
+
+h4 {
+    font-size: 118%;
+}
+
+nav {
+    font-family: PlayRegular;
+}
+
+/**********************
+HEADER
+**********************/
+#main-head {
+    width: 100%;
+    position: relative;
+    min-height: 192px; /* 2 columns width = (48px x 2) / 1024px */
+}
+
+#site-name {
+    width: 41%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+#site-name strong {
+    display: block;
+    text-align: right;
+    margin:  2%;
+}
+
+#main-nav {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#main-nav ul li {
+    display: block;
+    float: left;
+    margin: 0 2.34375%;
+}
+
+#main-nav ul li a {
+    display: block;
+    padding-top: 24px;
+}
+
+#main-nav ul li a:hover, #main-nav ul li a.active {
+    background: url('../img/nav-active.png') top center no-repeat;
+}
